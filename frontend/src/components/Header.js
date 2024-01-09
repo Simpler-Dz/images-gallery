@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Container } from 'react-bootstrap';
 
 const navbarStyle = {
-  backgroundColor: 'lightblue'
+  backgroundColor: 'lightblue',
 };
 
 const Header = (props) => {
@@ -12,7 +12,7 @@ const Header = (props) => {
         <Navbar.Brand href="/">{props.title}</Navbar.Brand>
       </Container>
     </Navbar>
-  )
+  );
 };
 
 export default Header;
