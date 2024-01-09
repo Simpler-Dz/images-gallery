@@ -5,21 +5,21 @@ const Search = ({ word, setWord, handleSubmit }) => {
   return (
     <Container className="mt-4">
       <Row className="justify-content-center">
-        <Form onSubmit={handleSubmit}>
-          <Col xs={6} md={8} lg={6} className="mt-4">
+        <Col xs={8} md={6} lg={6}>
+          <Form onSubmit={handleSubmit}>
             <Form.Control
               type="text"
               value={word}
               onChange={(e) => setWord(e.target.value)}
               placeholder="Search for new image..."
             />
-          </Col>
-          <Col xs={6} className="mt-4">
-            <Button variant="primary" type="submit">
-              Search
-            </Button>
-          </Col>
-        </Form>
+          </Form>
+        </Col>
+        <Col xs={4} md={2} lg={2}>
+          <Button variant="primary" type="submit">
+            Search
+          </Button>
+        </Col>
       </Row>
     </Container>
   );
