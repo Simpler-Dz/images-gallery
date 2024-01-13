@@ -6,5 +6,9 @@
   ],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
-  }
+  },
+  "python.pythonPath": "api/.venv/Script/python",
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formattinng.provider": "black"
 }
