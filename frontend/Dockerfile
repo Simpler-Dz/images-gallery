@@ -1,4 +1,4 @@
-FROM node:21.5-alpine
+FROM node
 
 WORKDIR /app
 
@@ -6,7 +6,8 @@ EXPOSE 3000
 
 COPY package.json package-lock.json ./
 
-RUN npm install --silent
+RUN npm config set registry https://registry.npm.taobao.org
+RUN npm install
 
 COPY . ./
 
