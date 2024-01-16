@@ -52,7 +52,7 @@ const App = () => {
     try {
       const res = await axios.post(`${API_URL}/images`, imageToBeSaved);
       if (res.data?.inserted_id) {
-        setImages((images) =>
+        setImages(
           images.map((image) =>
             image.id === id ? { ...image, saved: true } : image,
           ),
